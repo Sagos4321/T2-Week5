@@ -1,0 +1,263 @@
+/* --- RESET & GLOBAL STYLE --- */
+* {
+  margin: 0; /* Box Model: Margin */
+  padding: 0; /* Box Model: Padding */
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- NAVBAR (Flexbox Implementation) --- */
+.navbar {
+  padding: 20px 0;
+  background: white;
+  border-bottom: 1px solid #eee; /* Box Model: Border */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #000;
+}
+
+.logo span { color: #555; }
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s; /* Smooth transition for hover */
+}
+
+/* Hover Effect: Navbar */
+.nav-links a:hover {
+  color: #007bff;
+}
+
+body {
+  background: #f3f3f3;
+  color: #111;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-label-hero{
+  color: white;
+}
+
+
+.center {
+  text-align: center;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.gray {
+  background: #ededed;
+}
+
+.section-label {
+  font-size: 14px;
+}
+
+h1, h2 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  color: #444;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/Gambar/modern-business-center.jpg');
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.button-group {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border: 1px solid #111;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-dark {
+  background: #111;
+  color: white;
+}
+
+.btn-outline {
+  background: transparent;
+}
+
+.btn-teks{
+  background: transparent;
+  border-color: transparent;
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+.feature-card img{
+  height: 50px;
+}
+
+.grid-3,
+.grid-4 {
+  display: grid;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project-card h3,
+.project-card p,
+.project-card button{
+  display: flex;
+  text-align: left;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.project-image img{
+  width: 100%;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+.impact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.genre{
+  display: flex;
+}
+
+.genre b{
+  margin-top: 10px;
+  background-color: rgb(232, 232, 232);
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stat-box {
+  border-left: 1px solid #999;
+  padding-left: 24px;
+}
+
+.stat-box h3 {
+  font-size: 64px;
+  margin-bottom: 8px;
+}
+
+.cta {
+  padding: 120px 0;
+  text-align: center;
+
+  background-image: linear-gradient(#ededed, rgba(0, 0, 0, 0.5)), url('assets/Gambar/modern-business-center.jpg');
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* --- BUTTONS (Box Model & Hover) --- */
+.btn {
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+
+.btn-dark:hover { background: #333; }
+
+.btn-outline:hover { 
+  background: rgb(0, 0, 0); 
+  color: rgb(255, 255, 255); 
+}
+
+/* --- FOOTER --- */
+.footer {
+  background: #000000b9;
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
